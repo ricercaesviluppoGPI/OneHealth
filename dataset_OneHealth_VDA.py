@@ -248,7 +248,7 @@ folium.LayerControl().add_to(m)
 st_data = st_folium(m, height=400, width=725)
 
 col=st.selectbox(
-   "Seleziona una variabile:",
+   "Seleziona una variabile per cui analizzare la correlazione:",
    ('Densità di Popolazione', 'N.Farmaci prescritti',
        'N.Prestazioni erogate', 'N.Assistibili', 'N.Ospedali pubblici',
        'N.Accessi al PS', 'N.Dimessi Codice Bianco', 'N.Dimessi Codice Rosso', 'N.Prestazioni PS',
@@ -267,10 +267,12 @@ df.drop(['Superficie totale (ettari)', 'LOWFLHZ', 'MEDFLHZ', 'HIGHFLHZ',
 correlation_matrix=df.corr(numeric_only=True, method='kendall')
 
 
-fig=plt.figure(figsize=(8, 20), edgecolor='#b4d5a0', linewidth=12)
+fig=plt.figure(figsize=(8, 20))
 heatmap = sns.heatmap(correlation_matrix[[col]].sort_values(by=col, ascending=False), vmin=-1, vmax=1, annot=True, cmap='BrBG')
 heatmap.set_title('Correlazione %s vs altre variabili %s' %(col,anno), fontdict={'fontsize':15}, pad=5);
 st.write(fig)
+
+st.markdown("""---""")
 
 st.write("Feature Importance calcolata tramite Random Forest per predizione della variabile 'Pagamenti SS'")
 fig2=plt.figure(figsize=(8, 20))
