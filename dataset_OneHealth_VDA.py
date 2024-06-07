@@ -27,7 +27,7 @@ st.set_page_config(
 )
 
 with st.sidebar:
-    st.image("C:\devRS\Streamlit_VDA_OH\Gpi_CMYK_payoff.png", caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="PNG")
+    st.image("Gpi_CMYK_payoff.png", caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="PNG")
 
 st.write("# Dataset OneHealth Valle d'Aosta")
 
