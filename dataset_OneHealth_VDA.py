@@ -224,6 +224,8 @@ tooltip = folium.GeoJsonTooltip(
     max_width=800,
 )
 
+tooltip.add_to(m)
+
 
 # Add the legend to the map
 macro = MacroElement()
