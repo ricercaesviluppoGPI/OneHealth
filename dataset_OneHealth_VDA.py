@@ -21,6 +21,7 @@ import json
 import geopandas
 import branca
 from folium import GeoJson
+from folium import GeoJsonTooltip
 
 st.set_page_config(
     page_title="OneHealth VDA",
@@ -232,7 +233,8 @@ g = folium.GeoJson(
         else "transparent",
         "color": "black",
         "fillOpacity": 0.6,
-    }).add_to(m)
+    },
+    tooltip=tooltip).add_to(m)
 
 # Add the legend to the map
 macro = MacroElement()
