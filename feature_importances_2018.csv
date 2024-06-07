@@ -1,0 +1,87 @@
+Variabili;Importanza
+PM2p5_DAILY_ugm-3;0.05
+PM10_DAILY_ugm-3;0.05
+N.Farmaci prescritti;0.03
+Personale Amministrativo SRC;0.03
+Esenzione per invalidità;0.03
+TOT;0.03
+F-1;0.02
+F-2;0.02
+F-3;0.02
+F-4;0.02
+F-5;0.02
+M-1;0.02
+M-2;0.02
+M-4;0.02
+Densità di Popolazione;0.02
+TAXABINCR;0.02
+PENSINCR;0.02
+Personale Totale SSN;0.02
+Personale Tecnico SSN;0.02
+Personale Amministrativo SSN;0.02
+Personale Sanitario SRC;0.02
+Personale Tecnico SRC;0.02
+N.Accessi al PS;0.02
+N.Dimessi Codice Bianco;0.02
+N.Dimessi Codice Giallo;0.02
+N.Dimessi Codice Verde;0.02
+N.Prestazioni PS;0.02
+Esenzione per malattia cronica;0.02
+Esenzione per reddito;0.02
+N.Prestazioni ADI;0.02
+N.Interventi Infermiere ADI;0.02
+Dimissione protetta;0.02
+Trasferimento clinico;0.02
+NO2_DAILY_ugm-3;0.02
+M-3;0.01
+M-5;0.01
+Popolazione TOT;0.01
+ROADACC;0.01
+N.Veicoli;0.01
+N.Strutture Ricettive;0.01
+EXPUSERS;0.01
+NTAXP;0.01
+N.Farmacie;0.01
+N.Assistibili;0.01
+Personale Sanitario SSN;0.01
+Personale Professionale SSN;0.01
+N.Dimessi Codice Rosso;0.01
+Esenzione per malattia rara;0.01
+Altre esenzioni;0.01
+Uscita per decesso;0.01
+Dimissione standard;0.01
+Incassi SS;0.01
+Valore Nic comuni;0.01
+PUBHOSP;0.01
+N.Letti Degenza;0.01
+N.Letti DH;0.01
+N.Fumatori;0.01
+Superficie totale (ettari);0.0
+Superficie totale (Km2);0.0
+Altitudine del centro (metri);0.0
+LOWFLHZ;0.0
+MEDFLHZ;0.0
+HIGHFLHZ;0.0
+LANDATTZAA;0.0
+MODLHZP1;0.0
+MEDLHZP2;0.0
+HIGHLHZP3;0.0
+VHIGHLHZP4;0.0
+KILLINJ;0.0
+N.Prestazioni erogate;0.0
+Personale Professionale SRC;0.0
+N.Interventi Medico ADI;0.0
+N.Interventi OSS ADI;0.0
+N.Interventi Altro ADI;0.0
+N.Interventi Specialista Sanitario ADI;0.0
+PRVHOSPNHS;0.0
+TMIN_DAILY_C;0.0
+TMAX_DAILY_C;0.0
+RH2MIN_DAILY_%;0.0
+RH2MAX_DAILY_%;0.0
+PREC_DAILY_mm;0.0
+SNOW_DAILY_cm;0.0
+WMAX_DAILY_ms-1;0.0
+LIGHTNING_DAILY_km-2;0.0
+SSWTOT_DAILY_Whm-2;0.0
+TSHOCK_DAILY_C;0.0
