@@ -272,7 +272,8 @@ heatmap = sns.heatmap(correlation_matrix[[col]].sort_values(by=col, ascending=Fa
 heatmap.set_title('Correlazione %s vs altre variabili %s' %(col,anno), fontdict={'fontsize':15}, pad=5);
 st.write(fig)
 
-fig2=plt.figure(figsize=(8, 20), edgecolor='#b4d5a0', linewidth=12)
+st.write("Feature Importance calcolata tramite Random Forest per predizione della variabile 'Pagamenti SS'")
+fig2=plt.figure(figsize=(8, 20))
 feature_importances=pd.read_csv('feature_importances_%s.csv' %anno, sep=';')
 sns.set_theme(rc={'figure.figsize':(8,20)})
 plot=sns.barplot(y=feature_importances['Variabili'], x=feature_importances['Importanza'], orient="h", palette = "rainbow").set_title("Feature Importance %s" %anno, fontdict={'fontsize':15})
