@@ -20,6 +20,7 @@ import folium
 import json
 import geopandas
 import branca
+from folium import GeoJson
 
 st.set_page_config(
     page_title="OneHealth VDA",
