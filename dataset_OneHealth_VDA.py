@@ -253,7 +253,7 @@ if col=='N.Ospedali pubblici':
 ## Correlation Matrix
 df.drop(['Superficie totale (ettari)', 'LOWFLHZ', 'MEDFLHZ', 'HIGHFLHZ',
 'LANDATTZAA', 'MODLHZP1', 'MEDLHZP2', 'HIGHLHZP3', 'VHIGHLHZP4','N.Interventi Altro ADI', 'Trasferimento clinico'], axis=1, inplace=True)
-correlation_matrix=df.corr(method='kendall')
+correlation_matrix=df.corr(numeric_only=True, method='kendall')
 
 
 fig=plt.figure(figsize=(8, 20), edgecolor='#b4d5a0', linewidth=12)
