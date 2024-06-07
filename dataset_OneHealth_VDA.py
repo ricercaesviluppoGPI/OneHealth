@@ -224,8 +224,15 @@ tooltip = folium.GeoJsonTooltip(
     max_width=800,
 )
 
-tooltip.add_to(m)
-
+g = folium.GeoJson(
+    comunimerge,
+    style_function=lambda x: {
+        "fillColor": colormap(x["properties"][variabile1])
+        if x["properties"][variabile1] is not None
+        else "transparent",
+        "color": "black",
+        "fillOpacity": 0.6,
+    }).add_to(m)
 
 # Add the legend to the map
 macro = MacroElement()
