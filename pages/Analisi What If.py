@@ -169,7 +169,7 @@ if st.button(':chart_with_upwards_trend: Calcola la previsione', type="primary")
     st.plotly_chart(fig, use_container_width=True)
 
     import math
-    millnames = ['Mila',' Milioni',' Migliardi',' Trillion']
+    millnames = ['Mila',' Milioni',' Miliardi',' Trillion']
     def millify(n):
         n = float(n)
         millidx = max(0,min(len(millnames)-1,
