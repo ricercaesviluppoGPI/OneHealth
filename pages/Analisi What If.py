@@ -184,7 +184,7 @@ if st.button(':chart_with_upwards_trend: Calcola la previsione', type="primary")
         predictions_data_mod = pd.DataFrame(data = {'Territory': Territory['Territory'][-74:], 'prediction': predictions_mod})
         predictions_data_mod=predictions_data_mod[-74:]
     
-        fig = px.line(true_data[-74:], x="Territory", y="actual", color_discrete_sequence=["#962086"], labels='Dati storici', markers=True, hoverinfo='skip') #4CC005  #0514C0  #F63366
+        fig = px.line(true_data[-74:], x="Territory", y="actual", color_discrete_sequence=["#962086"], labels='Dati storici', markers=True) #4CC005  #0514C0  #F63366
         fig.add_scatter(x=true_data['Territory'][-74:], y=true_data['actual'][-74:], mode='lines', name='Dati storici', line=dict(color='#962086')) 
         fig.add_scatter(x=predictions_data_mod['Territory'], y=predictions_data_mod['prediction'], mode='lines', name='Simulazione', line=dict(color='#f48918'))
         fig.update_layout(title='Pagamenti del Sistema Sanitario: valori effettivi e previsti', xaxis_title='Comuni VDA', yaxis_title='Valori reali e previsti')
@@ -205,7 +205,7 @@ if st.button(':chart_with_upwards_trend: Calcola la previsione', type="primary")
    
     else:
         fig = px.line(true_data[-74:], x="Territory", y="actual", color_discrete_sequence=["#962086"], labels='Dati storici', markers=True) #4CC005  #0514C0  #F63366
-        fig.update_traces(hoverinfo='none')
+        #fig.update_traces(hoverinfo='none')
         fig.add_scatter(x=true_data['Territory'][-74:], y=true_data['actual'][-74:], mode='lines', name='Dati storici', line=dict(color='#962086')) 
         fig.add_scatter(x=predictions_data['Territory'], y=predictions_data['prediction'], mode='lines', name='Previsione', line=dict(color='#f48918'))
         fig.update_layout(title='Pagamenti del Sistema Sanitario: valori effettivi e previsti', xaxis_title='Comuni VDA', yaxis_title='Valori reali e previsti')
